@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download PPT - Ideathon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://png.pngtree.com/thumb_back/fh260/background/20240103/pngtree-vivid-abstract-texture-a-burst-of-colorful-background-image_13892083.png') no-repeat center center/cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        header img {
+            width: 100px;
+            height: auto;
+        }
+
+        .title {
+            text-align: center;
+            flex: 1;
+            color: white;
+        }
+
+        .title h1 {
+            font-size: 1.8em;
+            margin: 5px 0;
+        }
+
+        .title h2 {
+            font-size: 1.2em;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: #16a085;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #1abc9c;
+            transform: scale(1.1);
+        }
+
+        /* Page Content */
+        .container {
+            text-align: center;
+            padding: 50px 40px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 40px auto;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #ffcc00;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #dcdcdc;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #e74c3c;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-top: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .download-btn:hover {
+            background-color: #c0392b;
+            transform: scale(1.1);
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 20px 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            margin-top: auto;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        footer a {
+            color: #1abc9c;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="left_logo.png" alt="Left Logo">
+        <div class="title">
+            <h1>Sri Krishna Arts and Science College</h1>
+            <h2>Department of Computer Technology and Data Science</h2>
+        </div>
+        <img src="right_logo.png" alt="Right Logo">
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="rules.html">Rules</a>
+        <a href="download.html">Download PPT</a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <h1>Download Presentation Template</h1>
+        <p>Click the button below to download the official Ideathon presentation template. Use this template for submitting your innovative ideas!</p>
+        <a href="template.pptx" class="download-btn" download>Download PPT</a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        © 2025 Sri Krishna Arts and Science College <br>
+        <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a>
+    </footer>
+</body>
+</html>

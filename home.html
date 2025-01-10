@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Ideathon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://png.pngtree.com/thumb_back/fh260/background/20240103/pngtree-vivid-abstract-texture-a-burst-of-colorful-background-image_13892083.png') no-repeat center center/cover;
+            color: white;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header img {
+            width: 100px;
+            height: auto;
+        }
+
+        .title {
+            text-align: center;
+            flex: 1;
+            color: white;
+        }
+
+        .title h1 {
+            font-size: 1.8em;
+            margin: 5px 0;
+        }
+
+        .title h2 {
+            font-size: 1.2em;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: #16a085;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #1abc9c;
+            transform: scale(1.1);
+        }
+
+        .nav-registration {
+            background-color: #e74c3c;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .nav-registration:hover {
+            background-color: #c0392b;
+        }
+
+        /* Page Content */
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            max-width: 1200px;
+            margin: 30px auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            color: #f1c40f;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .problem-section {
+            margin-top: 30px;
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .problem {
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px 10px;
+            color: white;
+            margin-top: 50px;
+            font-size: 1em;
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #1abc9c;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="left_logo.png" alt="Left Logo">
+        <div class="title">
+            <h1>Sri Krishna Arts and Science College</h1>
+            <h2>Department of Computer Technology and Data Science</h2>
+        </div>
+        <img src="right_logo.png" alt="Right Logo">
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="rules.html">Rules</a>
+        <a href="download.html">Download PPT</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-VONmOHkycU27DjHoaEHWqvmpa9Bcq20C6QgKi1V5Spzplg/viewform?usp=header" class="nav-registration">Registration Link</a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <h1>Welcome to Ideathon</h1>
+        <h2>Explore Problem Statements</h2>
+
+        <!-- Computer Science Problems -->
+        <h2 class="section-title">Computer Science</h2>
+        <div class="problem-section">
+            <div class="problem">
+                <h3>Problem 1: AI-based Virtual Assistant</h3>
+                <p>Develop an AI-powered virtual assistant that can help users with task management, set reminders, and respond to queries in natural language.</p>
+            </div>
+            <div class="problem">
+                <h3>Problem 2: Smart Traffic Management System</h3>
+                <p>Create a smart traffic management system using IoT devices that can monitor traffic flow and control traffic signals in real time to reduce congestion.</p>
+            </div>
+            <div class="problem">
+                <h3>Problem 3: Blockchain-based Voting System</h3>
+                <p>Design a blockchain-based voting system that ensures transparency, security, and anonymity in the electoral process.</p>
+            </div>
+        </div>
+
+        <!-- Management and Commerce Problems -->
+        <h2 class="section-title">Management and Commerce</h2>
+        <div class="problem-section">
+            <div class="problem">
+                <h3>Problem 1: Inventory Management Optimization</h3>
+                <p>Develop a system to help businesses optimize their inventory management and minimize overstocking or stockouts.</p>
+            </div>
+            <div class="problem">
+                <h3>Problem 2: Digital Marketing Analytics</h3>
+                <p>Create an analytics platform that tracks and visualizes the ROI of digital marketing campaigns in real time.</p>
+            </div>
+            <div class="problem">
+                <h3>Problem 3: E-Wallet for Small Businesses</h3>
+                <p>Design a simple and secure e-wallet application targeted at small businesses for easy transactions and record-keeping.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2025 Sri Krishna Arts and Science College <br> 
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://instagram.com" target="_blank">Instagram</a> |
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </footer>
+</body>
+</html>
